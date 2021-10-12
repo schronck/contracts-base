@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile-contracts": "npx truffle compile",
+    "migrate": "npx truffle migrate --reset --network=ethereum.goerli MyContract",
+    "verify": "npx truffle run verify --network ethereum.goerli MyContract",
+    "test": "npx truffle test"
   },
   "keywords": [],
   "author": "schronck",
