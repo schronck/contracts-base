@@ -1,0 +1,5 @@
+build
+contracts/flattened
+node_modules
+.vscode
+.env
