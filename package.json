@@ -4,9 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile-contracts": "npx truffle compile",
-    "migrate": "npx truffle migrate --reset --network=goerli MyContract",
-    "verify": "npx truffle run verify --network goerli MyContract",
     "test": "npx truffle test"
   },
   "keywords": [],
