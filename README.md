@@ -1,0 +1,88 @@
+# Smart contract development base
+
+The setup in this repository can be used as a quick starting point for smart contract development.
+
+## Requirements
+
+To run the project you need:
+
+- [Node.js](https://nodejs.org) development environment.
+- (optional) A file named `.env`
+
+Your `.env` file should contain any of the following:
+
+- Your 12-word MetaMask seedphrase for deploying.
+  `MNEMONIC='seedphrase'`
+- Your [Infura](https://infura.io) project ID for deploying to Ethereum networks.
+  `INFURA_ID='id'`
+- Your API key for verification.
+  `ETHERSCAN_API_KEY='api key'`
+
+## Before deployment
+
+Pull the repository from GitHub, then install its dependencies by executing this command:
+
+```bash
+npm install
+```
+
+### Some additional steps before deployment
+
+If you have anything to add about the usage of the contracts or the migration files need variable parameters, mention them here.
+
+## Deployment
+
+To deploy the smart contracts to a network, replace _[networkName]_ in this command:
+
+```bash
+truffle migrate --network [networkName]
+```
+
+Networks can be configured in _truffle-config.js_. We've preconfigured the following:
+
+- `development` (for local testing)
+- `ethereum` (Ethereum Mainnet)
+- `goerli` (Görli Ethereum Testnet)
+- `kovan` (Kovan Ethereum Testnet)
+- `ropsten` (Ropsten Ethereum Testnet)
+- `bsc` (Binance Smart Chain)
+- `bsctest` (Binance Smart Chain Testnet)
+- `polygon` (Polygon Mainnet (formerly Matic))
+- `mumbai` (Matic Mumbai Testnet)
+
+### Note
+
+The above procedure deploys all the contracts. If you want to deploy only specific contracts, you can run only the relevant script(s) via the below command:
+
+```bash
+truffle migrate -f [start] --to [end] --network [name]
+```
+
+Replace _[start]_ with the number of the first and _[end]_ with the number of the last migration script you wish to run. To run only one script, _[start]_ and _[end]_ should match. The numbers of the scripts are:
+
+- 1 - Migrations
+- 2 - MyContract
+
+If the script fails before starting the deployment, you might need to run the first one, too.
+
+## Verification
+
+For automatic verification you can use [truffle plugin verify](https://github.com/rkalis/truffle-plugin-verify).
+
+```bash
+truffle run verify [contractName] --network [networkName]
+```
+
+## Tests
+
+To run the unit tests written for this project, execute this command in a terminal:
+
+```bash
+npm test
+```
+
+To run the unit tests only in a specific file, just append the path to the command. For example, to run tests just for the Example contract:
+
+```bash
+npm test ./test/MyContractTest.js
+```
