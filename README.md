@@ -81,7 +81,7 @@ To run the unit tests written for this project, execute this command in a termin
 npm test
 ```
 
-To run the unit tests only in a specific file, just append the path to the command. For example, to run tests just for the Example contract:
+To run the unit tests only in a specific file, just append the path to the command. For example, to run tests just for MyContract:
 
 ```bash
 npm test ./test/MyContractTest.js
