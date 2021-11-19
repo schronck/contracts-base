@@ -3,5 +3,15 @@
   "tabWidth": 2,
   "singleQuote": false,
   "trailingComma": "none",
-  "printWidth": 79
+  "printWidth": 120,
+  "overrides": [
+    {
+      "files": "*.sol",
+      "options": {
+        "tabWidth": 4,
+        "bracketSpacing": false,
+        "explicitTypes": "always"
+      }
+    }
+  ]
 }
