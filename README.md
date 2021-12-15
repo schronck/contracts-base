@@ -9,14 +9,18 @@ To run the project you need:
 - [Node.js](https://nodejs.org) development environment.
 - (optional) A file named `.env`
 
-Your `.env` file should contain any of the following:
+Your `.env` file should contain the following variables:
 
-- Your 12-word MetaMask seedphrase for deploying.
-  `MNEMONIC='seedphrase'`
-- Your [Infura](https://infura.io) project ID for deploying to Ethereum networks.
-  `INFURA_ID='id'`
-- Your API key for verification.
-  `ETHERSCAN_API_KEY='api key'`
+```bash
+# The private key of your wallet.
+ETHERSCAN_API_KEY=
+
+# Your infura.io project ID for deploying to Ethereum networks.
+INFURA_ID=
+
+# Your API key for verification.
+PRIVATE_KEY=
+```
 
 ## Before deployment
 

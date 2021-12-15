@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "compile": "npx truffle compile",
+    "migrate": "npx truffle migrate --reset --network=goerli && npm run verify",
+    "verify": "npx truffle run verify --network goerli",
+    "clean": "rm -rf build",
     "test": "node run-tests.js"
   },
   "keywords": [],
