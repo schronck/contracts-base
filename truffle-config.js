@@ -12,10 +12,6 @@
  * to sign your transactions before they're sent to a remote public node. Infura API
  * keys are available for free at: infura.io/register
  *
- * You'll also need a mnemonic - the twelve word phrase the wallet uses to generate
- * public/private key pairs. If you're publishing your code to GitHub make sure you load this
- * phrase from a file you've .gitignored so it doesn't accidentally become public.
- *
  */
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 require("dotenv").config();
@@ -45,7 +41,7 @@ module.exports = {
     ethereum: {
       provider: () =>
         new HDWalletProvider({
-          mnemonic: process.env.MNEMONIC,
+          privateKeys: [ process.env.PRIVATE_KEY ],
           providerOrUrl: `wss://mainnet.infura.io/ws/v3/${process.env.INFURA_ID}`,
           chainId: 1
         }),

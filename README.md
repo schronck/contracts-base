@@ -13,13 +13,13 @@ Your `.env` file should contain the following variables:
 
 ```bash
 # The private key of your wallet.
-ETHERSCAN_API_KEY=
+PRIVATE_KEY=
 
 # Your infura.io project ID for deploying to Ethereum networks.
 INFURA_ID=
 
 # Your API key for verification.
-PRIVATE_KEY=
+ETHERSCAN_API_KEY=
 ```
 
 ## Before deployment
