@@ -41,7 +41,7 @@ module.exports = {
     ethereum: {
       provider: () =>
         new HDWalletProvider({
-          privateKeys: [ process.env.PRIVATE_KEY ],
+          privateKeys: [process.env.PRIVATE_KEY ],
           providerOrUrl: `wss://mainnet.infura.io/ws/v3/${process.env.INFURA_ID}`,
           chainId: 1
         }),
@@ -55,7 +55,7 @@ module.exports = {
     goerli: {
       provider: () =>
         new HDWalletProvider({
-          privateKeys: [ process.env.PRIVATE_KEY ],
+          privateKeys: [process.env.PRIVATE_KEY ],
           providerOrUrl: `wss://goerli.infura.io/ws/v3/${process.env.INFURA_ID}`,
           chainId: 5
         }),
@@ -68,7 +68,7 @@ module.exports = {
     kovan: {
       provider: () =>
         new HDWalletProvider({
-          privateKeys: [ process.env.PRIVATE_KEY ],
+          privateKeys: [process.env.PRIVATE_KEY ],
           providerOrUrl: `wss://kovan.infura.io/ws/v3/${process.env.INFURA_ID}`,
           chainId: 42
         }),
@@ -82,7 +82,7 @@ module.exports = {
     ropsten: {
       provider: () =>
         new HDWalletProvider({
-          privateKeys: [ process.env.PRIVATE_KEY ],
+          privateKeys: [process.env.PRIVATE_KEY ],
           providerOrUrl: `wss://ropsten.infura.io/ws/v3/${process.env.INFURA_ID}`,
           chainId: 3
         }),
@@ -96,7 +96,7 @@ module.exports = {
     bsc: {
       provider: () =>
         new HDWalletProvider({
-          privateKeys: [ process.env.PRIVATE_KEY ],
+          privateKeys: [process.env.PRIVATE_KEY ],
           providerOrUrl: `https://bsc-dataseed1.binance.org`,
           chainId: 56
         }),
@@ -109,7 +109,7 @@ module.exports = {
     bsctest: {
       provider: () =>
         new HDWalletProvider({
-          privateKeys: [ process.env.PRIVATE_KEY ],
+          privateKeys: [process.env.PRIVATE_KEY ],
           providerOrUrl: `https://data-seed-prebsc-1-s1.binance.org:8545`,
           chainId: 97
         }),
@@ -123,7 +123,7 @@ module.exports = {
     polygon: {
       provider: () =>
         new HDWalletProvider({
-          privateKeys: [ process.env.PRIVATE_KEY ],
+          privateKeys: [process.env.PRIVATE_KEY ],
           providerOrUrl: `wss://ws-matic-mainnet.chainstacklabs.com`,
           chainId: 137
         }),
@@ -137,7 +137,7 @@ module.exports = {
     mumbai: {
       provider: () =>
         new HDWalletProvider({
-          privateKeys: [ process.env.PRIVATE_KEY ],
+          privateKeys: [process.env.PRIVATE_KEY ],
           providerOrUrl: `https://rpc-mumbai.matic.today`,
           chainId: 80001
         }),
