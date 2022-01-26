@@ -45,7 +45,6 @@ module.exports = {
           chainId: 1
         }),
       network_id: 1,
-      gas: 3500000,
       confirmations: 2,
       networkCheckTimeout: 9000000,
       timeoutBlocks: 200,
@@ -59,7 +58,6 @@ module.exports = {
           chainId: 5
         }),
       network_id: 5,
-      gas: 3500000,
       confirmations: 1,
       timeoutBlocks: 200,
       skipDryRun: true
@@ -72,7 +70,6 @@ module.exports = {
           chainId: 42
         }),
       network_id: 42,
-      gas: 3500000,
       confirmations: 2,
       networkCheckTimeout: 90000,
       timeoutBlocks: 200,
@@ -86,7 +83,6 @@ module.exports = {
           chainId: 3
         }),
       network_id: 3, // Ropsten's id
-      gas: 3500000, // Ropsten has a lower block limit than mainnet
       confirmations: 1, // # of confs to wait between deployments. (default: 0)
       networkCheckTimeout: 90000, // Seems like the default value was not enough
       timeoutBlocks: 200, // # of blocks before a deployment times out  (minimum/default: 50)
@@ -100,7 +96,6 @@ module.exports = {
           chainId: 56
         }),
       network_id: 56,
-      gas: 3500000,
       confirmations: 10,
       timeoutBlocks: 200,
       skipDryRun: true
@@ -113,7 +108,6 @@ module.exports = {
           chainId: 97
         }),
       network_id: 97,
-      gas: 3500000,
       confirmations: 10,
       networkCheckTimeout: 5000,
       timeoutBlocks: 200,
@@ -127,7 +121,6 @@ module.exports = {
           chainId: 137
         }),
       network_id: 137,
-      gas: 3500000,
       confirmations: 2,
       timeoutBlocks: 200,
       skipDryRun: true
@@ -140,7 +133,6 @@ module.exports = {
           chainId: 80001
         }),
       network_id: 80001,
-      gas: 3500000,
       confirmations: 2,
       timeoutBlocks: 200,
       skipDryRun: true
