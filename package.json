@@ -8,6 +8,7 @@
     "migrate": "npx truffle migrate --reset --network=goerli && npm run verify",
     "verify": "npx truffle run verify --network goerli",
     "clean": "rm -rf build",
+    "lint": "solhint 'contracts/**/*.sol'",
     "test": "node run-tests.js"
   },
   "keywords": [],
