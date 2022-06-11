@@ -22,7 +22,7 @@ INFURA_ID=
 ETHERSCAN_API_KEY=
 ```
 
-## Before deployment
+## Setup
 
 Pull the repository from GitHub, then install its dependencies by executing this command:
 
@@ -34,7 +34,7 @@ npm install
 
 If you have anything to add about the usage of the contracts or the migration files need variable parameters, mention them here.
 
-## Deployment
+## Contract deployment
 
 To deploy the smart contracts to a network, replace _[networkName]_ in this command:
 
@@ -66,8 +66,6 @@ Replace _[start]_ with the number of the first and _[end]_ with the number of th
 
 - 1 - Migrations
 - 2 - MyContract
-
-If the script fails before starting the deployment, you might need to run the first one, too.
 
 ## Verification
 
