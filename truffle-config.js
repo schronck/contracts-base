@@ -167,6 +167,6 @@ module.exports = {
 
   // This is just for the `truffle-plugin-verify` to catch the API key
   api_keys: {
-    etherscan: process.env.ETHERSCAN_API
+    etherscan: process.env.ETHERSCAN_API_KEY
   }
 };
