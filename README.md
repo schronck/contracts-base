@@ -2,7 +2,7 @@
 
 The setup in this repository can be used as a quick starting point for smart contract development.
 
-A version using [Hardhat](https://trufflesuite.com/truffle) is available [here](https://github.com/TomiOhl/contracts-base-hardhat).
+A version using [Hardhat](https://hardhat.org) is available [here](https://github.com/TomiOhl/contracts-base-hardhat).
 
 ## Requirements
 
