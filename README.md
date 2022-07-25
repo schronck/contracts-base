@@ -9,7 +9,7 @@ A version using [Hardhat](https://hardhat.org) is available [here](https://githu
 To run the project you need:
 
 - [Node.js](https://nodejs.org) development environment.
-- (optional) A file named `.env`
+- a file named `.env`
 
 Your `.env` file should contain the following variables:
 
