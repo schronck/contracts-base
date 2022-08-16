@@ -73,7 +73,7 @@ Replace _[start]_ with the number of the first and _[end]_ with the number of th
 
 ## Verification
 
-For automatic verification you can use [truffle plugin verify](https://github.com/rkalis/truffle-plugin-verify).
+For source code verification on block explorers, you can use [truffle plugin verify](https://github.com/rkalis/truffle-plugin-verify).
 
 ```bash
 truffle run verify [contractName] --network [networkName]
