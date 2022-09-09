@@ -13,17 +13,17 @@
   },
   "keywords": [],
   "license": "MIT",
-  "dependencies": {
-    "@truffle/hdwallet-provider": "^2.0.13",
-    "dotenv": "^16.0.1"
-  },
   "devDependencies": {
-    "@openzeppelin/test-helpers": "^0.5.15",
+    "@openzeppelin/test-helpers": "^0.5.16",
     "eth-gas-reporter": "^0.2.25",
     "prettier": "^2.7.1",
     "prettier-plugin-solidity": "^1.0.0-beta.24",
     "solhint": "^3.3.7",
-    "truffle": "^5.5.26",
-    "truffle-plugin-verify": "^0.5.27"
+    "truffle": "^5.5.29",
+    "truffle-plugin-verify": "^0.5.28"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.14",
+    "dotenv": "^16.0.2"
   }
 }
