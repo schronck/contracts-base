@@ -62,45 +62,6 @@ module.exports = {
       timeoutBlocks: 200,
       skipDryRun: true
     },
-    kovan: {
-      provider: () =>
-        new HDWalletProvider({
-          privateKeys: [process.env.PRIVATE_KEY],
-          providerOrUrl: `wss://kovan.infura.io/ws/v3/${process.env.INFURA_ID}`,
-          chainId: 42
-        }),
-      network_id: 42,
-      confirmations: 2,
-      networkCheckTimeout: 90000,
-      timeoutBlocks: 200,
-      skipDryRun: true
-    },
-    rinkeby: {
-      provider: () =>
-        new HDWalletProvider({
-          privateKeys: [process.env.PRIVATE_KEY],
-          providerOrUrl: `wss://rinkeby.infura.io/ws/v3/${process.env.INFURA_ID}`,
-          chainId: 4
-        }),
-      network_id: 4,
-      confirmations: 2,
-      networkCheckTimeout: 90000,
-      timeoutBlocks: 200,
-      skipDryRun: true
-    },
-    ropsten: {
-      provider: () =>
-        new HDWalletProvider({
-          privateKeys: [process.env.PRIVATE_KEY],
-          providerOrUrl: `wss://ropsten.infura.io/ws/v3/${process.env.INFURA_ID}`,
-          chainId: 3
-        }),
-      network_id: 3, // Ropsten's id
-      confirmations: 1, // # of confs to wait between deployments. (default: 0)
-      networkCheckTimeout: 90000, // Seems like the default value was not enough
-      timeoutBlocks: 200, // # of blocks before a deployment times out  (minimum/default: 50)
-      skipDryRun: true // Skip dry run before migrations? (default: false for public nets )
-    },
     bsc: {
       provider: () =>
         new HDWalletProvider({
@@ -158,6 +119,18 @@ module.exports = {
           chainId: 100
         }),
       network_id: 100,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true
+    },
+    arbitrum: {
+      provider: () =>
+        new HDWalletProvider({
+          privateKeys: [process.env.PRIVATE_KEY],
+          providerOrUrl: `https://arbitrum.blockpi.network/v1/rpc/public`,
+          chainId: 42161
+        }),
+      network_id: 42161,
       confirmations: 2,
       timeoutBlocks: 200,
       skipDryRun: true
