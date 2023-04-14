@@ -62,6 +62,18 @@ module.exports = {
       timeoutBlocks: 200,
       skipDryRun: true
     },
+    sepolia: {
+      provider: () =>
+        new HDWalletProvider({
+          privateKeys: [process.env.PRIVATE_KEY],
+          providerOrUrl: `wss://sepolia.infura.io/ws/v3/${process.env.INFURA_ID}`,
+          chainId: 11155111
+        }),
+      network_id: 11155111,
+      confirmations: 1,
+      timeoutBlocks: 200,
+      skipDryRun: true
+    },
     bsc: {
       provider: () =>
         new HDWalletProvider({

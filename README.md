@@ -33,6 +33,7 @@ Networks can be configured in _[truffle-config.js](truffle-config.js)_. We've pr
 - `development` (for local testing)
 - `ethereum` (Ethereum Mainnet)
 - `goerli` (Görli Ethereum Testnet)
+- `sepolia` (Sepolia Ethereum Testnet)
 - `bsc` (BNB Smart Chain)
 - `bsctest` (BNB Smart Chain Testnet)
 - `polygon` (Polygon Mainnet (formerly Matic))
