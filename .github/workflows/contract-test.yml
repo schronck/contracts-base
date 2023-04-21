@@ -1,4 +1,4 @@
-name: Lint, compile and test
+name: Code checks
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup NodeJS
         uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: "18"
           cache: "npm"
 
       - name: Cache node modules
@@ -43,7 +43,7 @@ jobs:
       - name: Setup NodeJS
         uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: "18"
           cache: "npm"
 
       - name: Cache node modules
